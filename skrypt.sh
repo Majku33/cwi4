@@ -23,3 +23,11 @@ if [[ "$1" == "--logs" && "$2" =~ ^[0-9]+$ ]]; then
 else
   echo "Nieznana opcja lub brak podanej liczby plików. Użyj: --logs <liczba>"
 fi
+
+if [[ "$1" == "--help" ]]; then
+    echo "Dostępne opcje:"
+    echo "--date: wyświetla dzisiejszą datę"
+    echo "--logs: tworzy 100 plików logx.txt, x – numer pliku od 1 – 100, w każdym pliku wpisana jest jego nazwa, nazwa skryptu i data"
+    echo "--logs <liczba>: tworzy określoną liczbę plików logx.txt, z numeracją od 1 do podanej liczby, w każdym pliku wpisana jest jego nazwa, nazwa skryptu i data"
+    echo "--help: wyświetla listę dostępnych opcji"
+fi
