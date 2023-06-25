@@ -23,7 +23,7 @@ else
     date '+%Y-%m-%d'
 
   elif [[ "$1" == "--init" ]]; then
-    git clone https://github.com/https://github.com/Adamczykolo/cwicz4
+    git clone https://github.com/https://github.com/Majku33/cwi4
     export PATH=$PATH:$(pwd)/repo
 
   elif [[ "$1" == "--error" || "$1" == "-e" ]]; then
